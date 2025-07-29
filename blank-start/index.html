@@ -2,16 +2,52 @@
 layout: default
 title: Home
 ---
+<div id="fixed-content" class="fixed top-0 left-0 w-full h-screen z-10 flex flex-col items-center justify-center pointer-events-none">
+    <!-- Greene Garden Header -->
+    <header class="absolute top-0 left-0 w-full text-center pt-0 py-2 leading-tight bg-transparent z-20">
+        <h1 class="text-[8vw] text-green-900 font-vienna">GREENE GARDEN OASIS</h1>
+    </header>  
 
-    <video autoplay muted
+    <!-- Scroll prompt -->
+    <header class="absolute bottom-[10px] left-0 w-full text-center py-4 bg-transparent z-20">
+        <h1 class="text-[8vw] text-green-900 font-vienna">SCROLL</h1>
+    </header>  
 
-        class="fixed inset-0 !w-full
-         !h-full object-cover max-w-none z-[-1]">
 
+    <!-- Kate-Ellen's video! -->
+    <div class="flex items-center justify-center min-h-screen p-8 z-10">
+        <video autoplay muted
+            class="w-auto h-[450px]">
+            <source src="material/garden-video-capcut.mp4">
+        </video>
+    </div>
 
-        <source src="material/drawing-animation.mp4">
-    </video>
-    <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/calendar">Event Calendar</a></li>
-    </ul>
+    <div id="parallax-bg" class="absolute top-1/2 left-1/2 w-full h-0 bg-green-900 -z-10 -translate-x-1/2 -translate-y-1/2"></div>
+</div>
+
+<div id="parallax-container" class="relative h-[100vh] overflow-hidden bg-white z-0"></div>
+
+<div class="h-screen"></div>
+
+<script>
+    const bg = document.getElementById('parallax-bg');
+    let scroll_tracker = 0;
+    let ticking = false;
+
+    function draw() {
+        bg.style.height = scroll_tracker + 'px';
+        ticking = false;
+    }
+
+    if (scroll_tracker < window.innerHeight) {
+        window.addEventListener('scroll', () => {
+            scroll_tracker = window.scrollY; // scrollY measures how far you've scrolled, using it instead of incrementing our own var is simpler and naturally scales animation to scroll!!!
+
+            if (!ticking) { // wait for one draw() call to finish before calling it again
+                requestAnimationFrame(draw); // limits the amount of re-draw calls made since scrolling = lots of triggers
+                ticking = true;
+            }
+            
+        });
+    };
+</script>

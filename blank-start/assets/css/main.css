@@ -43,3 +43,16 @@
     z-index: -1;
     transform: rotate(1deg);
 }
+
+@layer base {
+    @font-face {
+        font-family: 'vienna';
+        src: url('/material/vienna-font-regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .font-vienna {
+        font-family: 'vienna', serif;
+      }
+}
