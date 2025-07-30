@@ -2,27 +2,38 @@
 layout: default
 title: Home
 ---
-<div id="fixed-content" class="fixed top-0 left-0 w-full h-screen z-10 flex flex-col items-center justify-center pointer-events-none">
+<div id="fixed-content"
+    class="fixed top-0 left-0 w-full h-screen z-10 flex flex-col items-center justify-center pointer-events-none">
     <!-- Greene Garden Header -->
-    <header class="absolute top-0 left-0 w-full text-center pt-0 py-2 leading-tight bg-transparent z-20">
+    <header id="title" class="absolute top-0 left-0 w-full text-center pt-0 py-2 leading-tight bg-transparent z-20">
         <h1 class="text-[8vw] text-green-900 font-vienna">GREENE GARDEN OASIS</h1>
-    </header>  
+    </header>
 
     <!-- Scroll prompt -->
-    <header class="absolute bottom-[10px] left-0 w-full text-center py-4 bg-transparent z-20">
-        <h1 class="text-[8vw] text-green-900 font-vienna">SCROLL</h1>
-    </header>  
+    <div class="absolute bottom-[10px] left-0 w-full py-4 text-center py-4 bg-transparent z-20">
+        <div id="scroll_prompt" class="text-[8vw] text-green-900 font-vienna">SCROLL</div>
+    </div>
 
+    <!-- Links to Other Pages -->
+    <nav id="nav_bar"
+        class="invisible pointer-events-none absolute bottom-[10px] left-0 w-full text-center bg-transparent z-20">
+        <ul class="list-none flex justify-evenly">
+            <li><a href="/about" class="text-[4vw] text-black font-vienna">ABOUT</a></li>
+            <li><a href="https://account.venmo.com/u/greenegarden" class="text-[4vw] text-black font-vienna">DONATE</a>
+            </li>
+            <li><a href="/calendar" class="text-[4vw] text-black font-vienna">EVENTS</a></li>
+        </ul>
+    </nav>
 
     <!-- Kate-Ellen's video! -->
     <div class="flex items-center justify-center min-h-screen p-8 z-10">
-        <video autoplay muted
-            class="w-auto h-[450px]">
+        <video autoplay muted class="w-auto h-[450px]">
             <source src="material/garden-video-capcut.mp4">
         </video>
     </div>
 
-    <div id="parallax-bg" class="absolute top-1/2 left-1/2 w-full h-0 bg-green-900 -z-10 -translate-x-1/2 -translate-y-1/2"></div>
+    <div id="parallax-bg"
+        class="absolute top-1/2 left-1/2 w-full h-0 bg-green-900 -z-10 -translate-x-1/2 -translate-y-1/2"></div>
 </div>
 
 <div id="parallax-container" class="relative h-[100vh] overflow-hidden bg-white z-0"></div>
@@ -30,13 +41,28 @@ title: Home
 <div class="h-screen"></div>
 
 <script>
-    const bg = document.getElementById('parallax-bg');
-    let scroll_tracker = 0;
+    const bg = document.getElementById('parallax-bg'); // link var to html element
+    const scroll_header = document.getElementById('scroll_prompt');
+    const nav = document.getElementById('nav_bar');
+
+    let scroll_tracker = 0; // initially haven't scrolled
     let ticking = false;
 
-    function draw() {
-        bg.style.height = scroll_tracker + 'px';
+    const scroll_obj = scroll_header.getBoundingClientRect(); // getBoundingClientRect returns obj with data about pos of element AS A WHOLE, including padding etc.
+    const threshold = scroll_obj.bottom; // sets our threshold equal to the pixels away from the top that the bottom of the scroll TEXT is.
+
+    // parallax animation
+    function draw() { // the actual animation
+        bg.style.height = scroll_tracker + 'px'; // widen our tracker var to str and write it to inline CSS styling (not tailwind)
         ticking = false;
+
+        // reveal of nav links
+        if (bg.getBoundingClientRect().bottom > threshold) {
+            nav.classList.remove('pointer-events-none');
+            nav.classList.remove('invisible');
+            scroll_header.classList.add('invisible');
+            scroll_header.classList.add('pointer-events-none');
+        }
     }
 
     if (scroll_tracker < window.innerHeight) {
@@ -46,8 +72,8 @@ title: Home
             if (!ticking) { // wait for one draw() call to finish before calling it again
                 requestAnimationFrame(draw); // limits the amount of re-draw calls made since scrolling = lots of triggers
                 ticking = true;
-            }
-            
+            };
         });
     };
+
 </script>
