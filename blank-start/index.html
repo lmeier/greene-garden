@@ -7,27 +7,37 @@ title: Home
 <div id="flex-box" class="flex flex-col min-h-screen">
 
     <!-- Header -->
-    <header id="header" class="leading-none sticky top-0 left-0 w-full text-center pt-0 bg-white z-50 flex items-center justify-center">
-        <h1 class="text-[clamp(2rem,8vw,6rem)] m-0 p-0 text-green-900 font-vienna" style="transform: translateY(-13%);">GREENE GARDEN OASIS</h1>
+    <header id="header"
+        class="leading-none sticky top-0 left-0 w-full text-center pt-0 bg-white z-50 flex items-center justify-center">
+        <h1 class="text-[clamp(2rem,8vw,6rem)] m-0 p-0 text-green-900 font-vienna" style="transform: translateY(-13%);">
+            GREENE GARDEN OASIS</h1>
     </header>
-    
+
     <!-- Home Page Background -->
-    <div id="home_bg" class="relative top-0 left-0 z-1 py-6 flex flex-col flex-1 items-center justify-start bg-green-900">
+    <div id="home_bg"
+        class="relative top-0 left-0 z-1 py-6 flex flex-col flex-1 items-center justify-start bg-green-900">
         <!-- Kate-Ellen's video! -->
         <figure class="flex flex-col justify-center items-center w-full h-full max-h-full">
-            <video autoplay muted class="max-h-auto max-w-auto w-auto h-auto">
+            <video autoplay muted class="w-full h-auto max-h-[59vh] object-contain">
                 <source src="material/garden-video-capcut.mp4">
             </video>
-            <figcaption class="text-center text-white font-vienna text-[clamp(1rem,2vw,3rem)]">2 South Portland Ave </br> Brooklyn, NY</figcaption>
+            <figcaption class="text-center text-white font-vienna text-[clamp(1rem,2vw,3rem)]">2 South Portland
+                Ave</br>Brooklyn, NY</figcaption>
         </figure>
     </div>
 
     <!-- Nav Bar -->
     <nav id="nav_bar" class="w-full text-center bg-white z-2" style="transform: translateY(-13%);">
         <ul class="list-none flex justify-evenly p-0 m-0">
-            <li><a href="#about-page" class="text-green-900 text-[clamp(2rem,8vw,6rem)] p-0 m-0 font-vienna leading-none hover:underline">ABOUT</a></li>
-            <li><a target="_blank" href="https://account.venmo.com/u/greenegarden" class="text-green-900 text-[clamp(2rem,8vw,6rem)] p-0 m-0 font-vienna leading-none hover:underline">DONATE</a></li>
-            <li><a href="#calendar-page" class="text-green-900 text-[clamp(2rem,8vw,6rem)] p-0 m-0 font-vienna leading-none hover:underline">EVENTS</a></li>
+            <li><a href="#about-page"
+                    class="text-green-900 text-[clamp(2rem,8vw,6rem)] p-0 m-0 font-vienna leading-none hover:underline">ABOUT</a>
+            </li>
+            <li><a target="_blank" href="https://account.venmo.com/u/greenegarden"
+                    class="text-green-900 text-[clamp(2rem,8vw,6rem)] p-0 m-0 font-vienna leading-none hover:underline">DONATE</a>
+            </li>
+            <li><a href="#calendar-page"
+                    class="text-green-900 text-[clamp(2rem,8vw,6rem)] p-0 m-0 font-vienna leading-none hover:underline">EVENTS</a>
+            </li>
         </ul>
     </nav>
 
@@ -35,26 +45,29 @@ title: Home
     <div id="about-page" class="relative flex flex-col items-center justify-around h-screen bg-green-900 z-0">
         <h1 class="text-white font-vienna text-[6vw]"> About Us </h1>
         <p class="text-center text-white font-vienna text-[2vw]">
-            Founded in 1993, Greene Garden has served as an event venue and green space for the Fort Greene community for over 30 years. As a part of the Brooklyn Queens Land Trust, our garden is protected from purchase and included in a larger system of community gardens in the city.
+            Founded in 1993, Greene Garden has served as an event venue and green space for the Fort Greene community
+            for over 30 years. As a part of the Brooklyn Queens Land Trust, our garden is protected from purchase and
+            included in a larger system of community gardens in the city.
         </p>
         <p class="text-center text-white font-vienna text-[2vw]">
-            Greene Garden is more than just a green space: it's a center for community and culture. This community comes together a few times a month to host events on our beautiful stage!
+            Greene Garden is more than just a green space: it's a center for community and culture. This community comes
+            together a few times a month to host events on our beautiful stage!
         </p>
         <p class="text-center text-white font-vienna text-[2vw]">
-            In the fall and the summer we host internships where New York City youth collaborate to better the garden. Previously, interns have knitted sweaters for trees, built furniture for the garden, and conducted their own science experiments.
+            In the fall and the summer we host internships where New York City youth collaborate to better the garden.
+            Previously, interns have knitted sweaters for trees, built furniture for the garden, and conducted their own
+            science experiments.
         </p>
     </div>
 
     <!-- Event Calendar -->
     <div id="calendar-page" class="relative flex flex-col items-center justify-around h-screen bg-white z-0">
         <h1 class="text-green-900 font-vienna text-[6vw]"> Event Calendar </h1>
-        <iframe 
+        <iframe
             src="https://calendar.google.com/calendar/embed?src=c239cb3b848f866a69fe335945c022f58085b77496bd35e60491fd0ce09d7e32%40group.calendar.google.com&ctz=America%2FNew_York"
-            style="border: 0"
-            width="800"
-            height="600"
-            frameborder="0"
-            scrolling="no">
+            style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
         </iframe>
     </div>
+
+
 </div>
