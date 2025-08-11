@@ -8,42 +8,6 @@
     object-fit: cover;
 }
 
-.garden-text {
-    /* text-shadow: 0 2px 6px rgba(0,0,0,0.6); */
-}
-
-.squiggly-bg {
-    position: relative;
-    display: inline-block;
-    padding: 1rem 2rem;
-}
-
-.squiggly-bg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #bbf7d0; /* light green */
-    border-radius: 50% 20% 80% 30% / 40% 70% 30% 60%;
-    z-index: -1;
-    transform: rotate(-2deg);
-}
-
-.squiggly-bg::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    background-color: #dcfce7; /* lighter green overlay */
-    border-radius: 30% 70% 20% 80% / 60% 30% 70% 40%;
-    z-index: -1;
-    transform: rotate(1deg);
-}
-
 @layer base {
     @font-face {
         font-family: 'vienna';
