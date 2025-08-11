@@ -10,9 +10,10 @@ title: Home
 
     <!-- Header -->
     <header id="header" class="fixed top-0 left-0 w-full text-center bg-white z-50">
-        <a href="#home_bg"><div class="text-[clamp(2rem,8vw,6rem)] m-0 p-0 text-green-900 font-vienna"
-            style="transform: translateY(-13%);">
-            GREENE GARDEN OASIS</div></a>
+        <a href="#home_bg">
+            <div class="text-[clamp(2rem,8vw,6rem)] m-0 p-0 text-green-900 font-gentle">
+                Greene Garden Oasis</div>
+        </a>
     </header>
 
     <!-- Home Page Background -->
@@ -22,7 +23,7 @@ title: Home
             <video autoplay muted class="object-contain shadow-xl">
                 <source src="material/garden-video-capcut.mp4">
             </video>
-            <figcaption class="text-center text-white font-vienna text-[clamp(1rem,2vw,3rem)]">2 South Portland
+            <figcaption class="text-center text-white font-merriweather text-[clamp(1rem,2vw,3rem)]">2 South Portland
                 Ave</br>Brooklyn, NY</figcaption>
         </figure>
     </div>
@@ -31,13 +32,13 @@ title: Home
     <nav id="nav_bar" class="w-full text-center bg-white">
         <ul class="list-none flex justify-evenly pb-2 m-0">
             <li><a href="#about-page"
-                    class="text-green-900 text-[clamp(2rem,4vw,6rem)] m-0 font-vienna leading-none hover:underline">ABOUT</a>
+                    class="text-green-900 text-[clamp(2rem,4vw,6rem)] font-gentle m-0 leading-none hover:underline">ABOUT</a>
             </li>
             <li><a target="_blank" href="https://account.venmo.com/u/greenegarden"
-                    class="text-green-900 text-[clamp(2rem,4vw,6rem)] m-0 font-vienna leading-none hover:underline">DONATE</a>
+                    class="text-green-900 text-[clamp(2rem,4vw,6rem)] font-gentle m-0 leading-none hover:underline">DONATE</a>
             </li>
             <li><a href="#calendar-page"
-                    class="text-green-900 text-[clamp(2rem,4vw,6rem)] m-0 font-vienna leading-none hover:underline">EVENTS</a>
+                    class="text-green-900 text-[clamp(2rem,4vw,6rem)] font-gentle m-0 leading-none hover:underline">EVENTS</a>
             </li>
         </ul>
     </nav>
@@ -45,26 +46,70 @@ title: Home
 
 <!-- About Page -->
 <div id="about-page" class="relative flex flex-col items-center justify-around min-h-screen bg-green-900 z-0">
-    <h1 class="text-white font-vienna text-[6vw]"> About Us </h1>
-        <p class="text-center max-w-[80%] text-white font-vienna text-[2vw]">
-            Founded in 1993, Greene Garden has served as an event venue and green space for the Fort Greene community
-            for over 30 years. As a part of the Brooklyn Queens Land Trust, our garden is protected from purchase and
-            included in a larger system of community gardens in the city.
-        </p>
-        <p class="text-center text-white max-w-[80%] font-vienna text-[2vw]">
-            Greene Garden is more than just a green space: it's a center for community and culture. This community comes
-            together a few times a month to host events on our beautiful stage!
-        </p>
-        <p class="text-center text-white max-w-[80%] font-vienna text-[2vw]">
-            In the fall and the summer we host internships where New York City youth collaborate to better the garden.
-            Previously, interns have knitted sweaters for trees, built furniture for the garden, and conducted their own
-            science experiments.
-        </p>
+    <h1 class="text-white font-gentle text-[6vw]"> About Us </h1>
+    <p class="text-center max-w-[80%] text-white font-merriweather text-[2vw]">
+        Founded in 1993, Greene Garden has served as an event venue and green space for the Fort Greene community
+        for over 30 years. As a part of the Brooklyn Queens Land Trust, our garden is protected from purchase and
+        included in a larger system of community gardens in the city.
+    </p>
+    <p class="text-center text-white max-w-[80%] font-merriweather text-[2vw]">
+        Greene Garden is more than just a green space: it's a center for community and culture. This community comes
+        together a few times a month to host events on our beautiful stage!
+    </p>
+    <p class="text-center text-white max-w-[80%] font-merriweather text-[2vw]">
+        In the fall and the summer we host internships where New York City youth collaborate to better the garden.
+        Previously, interns have knitted sweaters for trees, built furniture for the garden, and conducted their own
+        science experiments.
+    </p>
+</div>
+
+<!-- Timeline Page -->
+<div id="timeline-page" class="flex flex-col min-h-screen bg-green-900">
+
+    <h1 class="bg-white text-center text-green-900 font-gentle text-[100px] mb-[50px]">Summer Internship</h1>
+
+    <div class="relative left-[100px] mb-[30px] shadow-xl flex bg-white max-w-[40%] h-[500px] items-center rounded-lg px-[30px]">
+        <img src="/material/timeline-images/team-selfie.jpg" class="h-[80%]">
+        <div class="pl-[20px]">
+            <h2 class="text-green-700 text-[50px] text-center font-gentle">Week 1</h2>
+            <p class="text-green-600 text-center font-gentle">Interns got to know each other and brainstormed ideas for their garden projects.</p>
+        </div>
+        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white"></span>
+    </div>
+
+    <div class="relative left-[100px] mb-[30px] shadow-xl flex bg-white max-w-[40%] h-[500px] items-center rounded-lg px-[30px]">
+        <img src="/material/timeline-images/oysters.jpg" class="h-[80%]">
+        <div class="pl-[20px]">
+            <h2 class="text-green-700 text-[50px] text-center font-gentle">Week 2</h2>
+            <p class="text-green-600 text-center font-gentle">Interns took trips to green spaces and practiced some citizen science.</p>
+        </div>
+        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white"></span>
+    </div>
+
+    <div class="relative left-[100px] mb-[30px] shadow-xl flex bg-white max-w-[40%] h-[500px] items-center rounded-lg px-[30px]">
+        <img src="/material/timeline-images/greene-gals.jpg" class="h-[80%]">
+        <div class="pl-[20px]">
+            <h2 class="text-green-700 text-[50px] text-center font-gentle">Week 3</h2>
+            <p class="text-green-600 text-center font-gentle">Interns went on garden visits to local community gardens and collaborated to help out.</p>
+        </div>
+        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white"></span>
+    </div>
+
+    <div class="relative left-[100px] mb-[50px] shadow-xl flex bg-white max-w-[40%] h-[500px] items-center rounded-lg px-[30px]">
+        <img src="/material/timeline-images/birding.jpg" class="h-[80%]">
+        <div class="pl-[20px]">
+            <h2 class="text-green-700 text-[50px] text-center font-gentle">Week 4</h2>
+            <p class="text-green-600 text-center font-gentle">Interns explored Fort Greene Park on birding walks!</p>
+        </div>
+        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white"></span>
+    </div>
+    
+
 </div>
 
 <!-- Event Calendar -->
 <div id="calendar-page" class="relative flex flex-col items-center justify-around h-screen bg-white z-0">
-    <h1 class="text-green-900 font-vienna text-[6vw]"> Event Calendar </h1>
+    <h1 class="text-green-900 font-gentle text-[6vw]"> Event Calendar </h1>
     <iframe
         src="https://calendar.google.com/calendar/embed?src=c239cb3b848f866a69fe335945c022f58085b77496bd35e60491fd0ce09d7e32%40group.calendar.google.com&ctz=America%2FNew_York"
         style="border: 0" width="800" height="600" frameborder="0" scrolling="no">

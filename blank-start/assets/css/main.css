@@ -19,4 +19,37 @@
     .font-vienna {
         font-family: 'vienna', serif;
       }
+
+    @font-face {
+        font-family: 'kairo';
+        src: url('/material/Kairo_Demo.ttf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .font-kairo {
+        font-family: 'kairo', serif;
+    }
+
+    @font-face {
+        font-family: 'gentle';
+        src: url('/material/MADE-Gentle-font.otf') format('opentype');
+        font-weight: normal;
+    }
+
+    .font-gentle {
+        font-family: 'gentle', serif;
+    }
+
+    @font-face {
+        font-family: 'merriweather';
+        src: url('/material/merriweather.ttf') format('opentype');
+        font-variation-settings: "wght" 575;
+        font-style: normal;
+    }
+
+    .font-merriweather {
+        font-family: 'merriweather', serif;
+    }
+    
 }
