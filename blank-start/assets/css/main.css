@@ -1,3 +1,107 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@layer base {
+    @font-face {
+        font-family: 'vienna';
+        src: url('/material/vienna-font-regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .font-vienna {
+        font-family: 'vienna', serif;
+      }
+
+    @font-face {
+        font-family: 'kairo';
+        src: url('/material/Kairo_Demo.ttf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .font-kairo {
+        font-family: 'kairo', serif;
+    }
+
+    @font-face {
+        font-family: 'gentle';
+        src: url('/material/MADE-Gentle-font.otf') format('opentype');
+        font-weight: normal;
+    }
+
+    .font-gentle {
+        font-family: 'gentle', serif;
+    }
+
+    @font-face {
+        font-family: 'merriweather';
+        src: url('/material/merriweather.ttf') format('opentype');
+        font-variation-settings: "wght" 575;
+        font-style: normal;
+    }
+
+    .font-merriweather {
+        font-family: 'merriweather', serif;
+    }
+
+    .text-sunflower {
+        color: #E8B12D;
+    }
+
+    .bg-sunflower {
+        background-color: #E8B12D;
+    }
+
+    .text-verdant {
+        color: #a3ae6e;
+    }
+
+    .bg-verdant {
+        background-color: #a3ae6e;
+    }
+
+    .text-violet {
+        color: #ccaff2;
+    }
+
+    .bg-violet {
+        background-color: #ccaff2;
+    }
+
+    .text-pumpkin {
+        color: #f06d1f;
+    }
+
+    .bg-pumpkin {
+        background-color: #f06d1f;
+
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-animation {
+    animation: fadeIn 1s ease forwards
+}
+
+.hidden {
+    opacity: 0;
+}
