@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tailwind": "tailwindcss",
-    "init": "tailwindcss init",
+    "build:css": "npx tailwindcss -i assets/css/main.css -o assets/css/main.build.css --minify --watch",
+    "build:css:prod": "npx tailwindcss -i assets/css/main.css -o assets/css/main.build.css --minify",
+    "tailwind": "npx tailwindcss",
+    "init": "npx tailwindcss init",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,8 +15,11 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.1"
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.14"
+  }
 }
