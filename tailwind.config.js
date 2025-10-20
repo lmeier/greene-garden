@@ -16,6 +16,7 @@ module.exports = {
         'verdant': '#a3ae6e',
         'violet': '#ccaff2',
         'pumpkin': '#f06d1f',
+        'fern': '#4F7942',
       },
       fontFamily: {
         'vienna': ['vienna', 'serif'],
