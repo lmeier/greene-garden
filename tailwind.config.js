@@ -1,15 +1,32 @@
 /** @type {import('tailwindcss').Config} */
-const typography = require('@tailwindcss/typography');
-
 module.exports = {
   content: [
-    "./_layouts/**/*.html",
-    "./_includes/**/*.html",
-    "./*.html",
-    "./*.md",
-    "./*.markdown"
+    "./*.{html,md,markdown}",
+    "./_layouts/**/*.{html,md,markdown}",
+    "./_includes/**/*.{html,md,markdown}",
+    "./_posts/**/*.{html,md,markdown}",
+    "./assets/**/*.{html,js,md,markdown}",
+    "./**/*.{html,md,markdown}",
+    "./_site/*.{html,md,markdown}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'sunflower': '#E8B12D',
+        'verdant': '#a3ae6e',
+        'violet': '#ccaff2',
+        'pumpkin': '#f06d1f',
+        'fern': '#4F7942',
+      },
+      fontFamily: {
+        'vienna': ['vienna', 'serif'],
+        'kairo': ['kairo', 'serif'],
+        'gentle': ['gentle', 'serif'],
+        'merriweather': ['merriweather', 'serif'],
+      },
+    },
   },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
