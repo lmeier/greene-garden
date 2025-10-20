@@ -9,7 +9,12 @@ title: Home
     <!-- Header -->
     <header id="header" class="relative h-screen md:fixed top-0 flex flex-col items-center left-0 h-full md:h-auto w-full text-center bg-white z-50">
         <a href="#home_bg">
-            <div class="text-[3rem] lg:text-[6rem] m-0 px-4 pt-[20px] text-green-900 bg-verdant md:bg-white font-gentle">
+            <div class="hidden md:block md:opacity-100 text-[4rem] lg:text-[6rem] m-0 text-green-900 bg-white font-gentle">
+                Greene Garden Oasis</div>
+        </a>
+
+        <a href="#home_bg">
+            <div class="md:hidden text-[3rem] m-0 px-4 pt-[20px] text-green-900 bg-verdant font-gentle">
                 Greene Garden</div>
         </a>
 
@@ -25,21 +30,22 @@ title: Home
         <!-- Nav Bar -->
         <ul class="absolute bottom-0 left-0 w-full bg-fern md:bg-white md:relative list-none flex justify-evenly pt-[10px] pb-2 m-0 px-4">
             <li><a href="#about-page"
-                    class="text-verdant md:text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">ABOUT</a>
+                    class="text-verdant md:text-green-900 text-[1.5rem] md:text-[2rem] lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">ABOUT</a>
             </li>
             <li><a target="_blank" href="https://account.venmo.com/u/greenegarden"
-                    class="text-verdant md:text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] px-[5px] md:px-0 font-gentle m-0 leading-none hover:underline">DONATE</a>
+                    class="text-verdant md:text-green-900 text-[1.5rem] md:text-[2rem] lg:text-[clamp(2rem,2vw,6rem)] px-[5px] md:px-0 font-gentle m-0 leading-none hover:underline">DONATE</a>
             </li>
             <li><a href="#calendar-page"
-                    class="text-verdant md:text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">EVENTS</a>
+                    class="text-verdant md:text-green-900 text-[1.5rem] md:text-[2rem] lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">EVENTS</a>
             </li>
         </ul>
     </header>
 
     <!-- Home Page Background -->
-    <div id="home_bg" class="hidden md:flex md:opacity-100 flex-1 w-full bg-green-900 justify-center">
+    <div id="home_bg" class="hidden md:flex md:flex-col items-center justify-center md:opacity-100 w-full bg-green-900 h-screen">
         <!-- Kate-Ellen's video! -->
-        <figure class="pt-[225px] max-w-[45vh]">
+        <div class="flex-1 bg-green-900 w-full"></div>
+        <figure class="max-w-[45vh] pb-[30px] lg:pb-0">
             <video autoplay muted class="object-contain shadow-xl">
                 <source src="{{ '/material/garden-video-capcut.mp4' | relative_url }}">
             </video>
@@ -63,7 +69,7 @@ title: Home
 <!-- Timeline Page -->
 <div id="timeline-page" class="relative flex flex-col items-center min-h-screen w-full bg-green-900">
 
-    <h1 class="animated text-center text-verdant font-gentle bg-fern w-[85%] md:w-auto px-[10px] text-[2rem] md:text-[6rem] my-[30px] med:mb-[50px] z-5">Summer Internship</h1>
+    <h1 class="animated text-center text-verdant font-gentle bg-fern w-[85%] md:w-auto mx-[20px] lg:mx-[0] px-[10px] text-[2rem] md:text-[6rem] my-[30px] z-5">Summer Internship</h1>
 
     <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] md:max-w-[40%] max-h-[100vh] lg:h-[500px] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col lg:flex-row md:right-[27%] lg:right-[25%] lg:pt-[0] lg:pb-[0]">
         <img src="{{ '/material/timeline-images/team-selfie.jpg' | relative_url }}" class="max-w-[90%] object-cover md:max-h-[80%] md:w-auto lg:px-[10px]">
@@ -71,55 +77,55 @@ title: Home
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px] lg:text-[4rem]">Week 1</h2>
             <p class="text-green-700 text-center font-gentle">Interns got to know each other and brainstormed ideas for their garden projects.</p>
         </div>
-        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden md:block md:opacity-100"></span>
+        <span class="absolute -right-10 h-0 w-0 top-1/2 -translate-y-1/2 border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden md:block md:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:left-[25%]">
-        <img src="{{ '/material/timeline-images/oysters.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] md:max-w-[40%] max-h-[100vh] lg:h-[500px] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col lg:flex-row md:left-[27%] lg:left-[25%] lg:pt-[0] lg:pb-[0]">
+        <img src="{{ '/material/timeline-images/oysters.jpg' | relative_url }}" class="max-w-[90%] object-cover md:max-h-[80%] md:w-auto lg:px-[10px]">
         <div class="max-w-[80%]">
-            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 2</h2>
+            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px] lg:text-[4rem]">Week 2</h2>
             <p class="text-green-700 text-center font-gentle">Interns took trips to green spaces, learning soil and water science while practicing citizen science.</p>
         </div>
-        <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block sm:opacity-100"></span>
+        <span class="absolute -left-10 h-0 w-0 top-1/2 -translate-y-1/2 border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block sm:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:right-[25%]">
-        <img src="{{ '/material/timeline-images/greene-gals.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] md:max-w-[40%] max-h-[100vh] lg:h-[500px] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col lg:flex-row md:right-[27%] lg:right-[25%] lg:pt-[0] lg:pb-[0]">
+        <img src="{{ '/material/timeline-images/greene-gals.jpg' | relative_url }}" class="max-w-[90%] object-cover md:max-h-[80%] md:w-auto lg:px-[10px]">
         <div class="max-w-[80%]">
-            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 3</h2>
+            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px] lg:text-[4rem]">Week 3</h2>
             <p class="text-green-700 text-center font-gentle">Interns got hands-on experience on garden visits to local community gardens where they collaborated to help them out.</p>
         </div>
-        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block sm:opacity-100"></span>
+        <span class="absolute -right-10 h-0 w-0 top-1/2 -translate-y-1/2 border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block sm:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:left-[25%]">
-        <img src="{{ '/material/timeline-images/birding.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] md:max-w-[40%] max-h-[100vh] lg:h-[500px] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col lg:flex-row md:left-[27%] lg:left-[25%] lg:pt-[0] lg:pb-[0]">
+        <img src="{{ '/material/timeline-images/birding.jpg' | relative_url }}" class="max-w-[90%] object-cover md:max-h-[80%] md:w-auto lg:px-[10px]">
         <div class="max-w-[80%]">
-            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 4</h2>
+            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px] lg:text-[4rem]">Week 4</h2>
             <p class="text-green-700 text-center font-gentle">Interns explored their environment by learning to identify trees, diagnose plants, and taking birding walks in Fort Greene Park!</p>
         </div>
-        <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block sm:opacity-100"></span>
+        <span class="absolute -left-10 h-0 w-0 top-1/2 -translate-y-1/2 border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block sm:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%]  max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:right-[25%]">
-        <img src="{{ '/material/timeline-images/cleanup.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] md:max-w-[40%] max-h-[100vh] lg:h-[500px] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col lg:flex-row md:right-[27%] lg:right-[25%] lg:pt-[0] lg:pb-[0]">
+        <img src="{{ '/material/timeline-images/cleanup.jpg' | relative_url }}" class="max-w-[90%] object-cover md:max-h-[80%] md:w-auto lg:px-[10px]">
         <div class="max-w-[80%]">
-            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 5</h2>
+            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px] lg:text-[4rem]">Week 5</h2>
             <p class="text-green-700 text-center font-gentle">Interns were stewards of plant life in the Greene Garden, completing tree care and soil checkups on home turf while working on their project presentations.</p>
         </div>
-        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block sm:opacity-100"></span>
+        <span class="absolute -right-10 h-0 w-0 top-1/2 -translate-y-1/2 border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block sm:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:left-[25%]">
-        <img src="{{ '/material/timeline-images/team-selfie.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] md:max-w-[40%] max-h-[100vh] lg:h-[500px] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col lg:flex-row md:left-[27%] lg:left-[25%] lg:pt-[0] lg:pb-[0]">
+        <img src="{{ '/material/timeline-images/team-selfie.jpg' | relative_url }}" class="max-w-[90%] object-cover md:max-h-[80%] md:w-auto lg:px-[10px]">
         <div class="max-w-[80%]">
-            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 6</h2>
+            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px] lg:text-[4rem]">Week 6</h2>
             <p class="text-green-700 text-center font-gentle">Interns presented their hard work on their garden projects to peers, educators, and industry professionals who they met over the course of the program!</p>
         </div>
-        <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block sm:opacity-100"></span>
+        <span class="absolute -left-10 h-0 w-0 top-1/2 -translate-y-1/2 border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block sm:opacity-100"></span>
     </div>
     
-    <div id="timeline" class="hidden md:block md:opacity-100 absolute top-[205px] right-[50%] w-[10px] lg:w-[15px] h-[92%] bg-white shadow-xl z-0"></div>
+    <div id="timeline" class="hidden md:block md:opacity-100 absolute top-[9%] lg:top-[6%] right-[50%] w-[10px] lg:w-[15px] h-[90%] lg:h-[93%] bg-white shadow-xl z-0"></div>
 </div>
 
 <!-- Event Calendar -->
