@@ -9,7 +9,7 @@ title: Home
     <!-- Header -->
     <header id="header" class="relative h-screen md:fixed top-0 flex flex-col items-center left-0 h-full md:h-auto w-full text-center bg-white z-50">
         <a href="#home_bg">
-            <div class="text-[3rem] lg:text-[6rem] m-0 px-4 pt-[20px] text-green-900 font-gentle">
+            <div class="text-[3rem] lg:text-[6rem] m-0 px-4 pt-[20px] text-green-900 bg-verdant md:bg-white font-gentle">
                 Greene Garden</div>
         </a>
 
@@ -23,15 +23,15 @@ title: Home
         </figure>
 
         <!-- Nav Bar -->
-        <ul class="absolute bottom-0 left-0 w-full md:relative list-none flex justify-evenly pb-2 m-0 px-4">
+        <ul class="absolute bottom-0 left-0 w-full bg-fern md:bg-white md:relative list-none flex justify-evenly pt-[10px] pb-2 m-0 px-4">
             <li><a href="#about-page"
-                    class="text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">ABOUT</a>
+                    class="text-verdant md:text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">ABOUT</a>
             </li>
             <li><a target="_blank" href="https://account.venmo.com/u/greenegarden"
-                    class="text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] px-[5px] md:px-0 font-gentle m-0 leading-none hover:underline">DONATE</a>
+                    class="text-verdant md:text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] px-[5px] md:px-0 font-gentle m-0 leading-none hover:underline">DONATE</a>
             </li>
             <li><a href="#calendar-page"
-                    class="text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">EVENTS</a>
+                    class="text-verdant md:text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">EVENTS</a>
             </li>
         </ul>
     </header>
@@ -51,76 +51,75 @@ title: Home
 
 <!-- About Page -->
 <div id="about-page" class="relative flex flex-col items-center justify-around min-h-screen w-full bg-green-900 md:bg-verdant z-0">
-    <h1 class="animated text-verdant md:text-green-900 font-gentle text-[4rem] md:text-[6vw] py-[30px]"> About Us </h1>
+    <h1 class="animated bg-fern text-verdant md:text-green-900 font-gentle text-[4rem] md:text-[6vw] px-[10px] my-[30px]"> About Us </h1>
     <h2 class="hidden md:block md:opacity-100 text-green-800 font-gentle text-[3rem] text-center pb-[20px]">Welcome to the Greene Garden <br> “Greene with an E”</h2>
     <h2 class="animated md:hidden text-verdant font-gentle text-[3rem] text-center pb-[20px]">Greene Garden</h2>
     <h2 class="animated md:hidden text-verdant font-gentle text-[2.4rem] text-center pb-[20px]">"Greene With an E"</h2>
     <p class="animated text-center max-w-[70%] text-verdant md:text-green-800 font-merriweather text-[1.5rem] md:text-[2rem] py-[20px]">
         Nestled in the heart of Fort Greene, Brooklyn, the Greene Garden is a vibrant, member-run community space rooted in wellness, education, and environmental stewardship.</p>
-    <p class="animated text-center max-w-[70%] text-verdant md:text-green-800 font-merriweather text-[1.5rem] md:text-[2rem] pb-[20px]">As part of the Brooklyn Queens Land Trust, we nurture a green oasis where neighbors gather for events and build deeper connections with one another and the land. From youth programming and wellness classes to seasonal celebrations and volunteer days, the Greene Garden is where community grows.</p>
+    <p class="animated text-center max-w-[70%] text-verdant md:text-green-800 font-merriweather text-[1.5rem] md:text-[2rem] pb-[20px] md:pb-[50px]">As part of the Brooklyn Queens Land Trust, we nurture a green oasis where neighbors gather for events and build deeper connections with one another and the land. From youth programming and wellness classes to seasonal celebrations and volunteer days, the Greene Garden is where community grows.</p>
 </div>
 
 <!-- Timeline Page -->
 <div id="timeline-page" class="relative flex flex-col items-center min-h-screen w-full bg-green-900">
 
-    <h1 class="animated text-center text-verdant font-gentle bg-fern w-[85%] px-[10px] text-[2rem] md:text-[6rem] mb-[10px] med:mb-[50px] z-5">Summer Internship</h1>
+    <h1 class="animated text-center text-verdant font-gentle bg-fern w-[85%] md:w-auto px-[10px] text-[2rem] md:text-[6rem] my-[30px] med:mb-[50px] z-5">Summer Internship</h1>
 
-    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
-        <img src="{{ '/material/timeline-images/team-selfie.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] md:h-[500px] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:flex-row md:right-[25%] md:pt-[0] md:pb-[0]">
+        <img src="{{ '/material/timeline-images/team-selfie.jpg' | relative_url }}" class="max-w-[90%] object-cover md:max-h-[80%] md:w-auto md:px-[10px]">
         <div class="max-w-[80%]">
-            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 1</h2>
+            <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px] md:text-[4rem]">Week 1</h2>
             <p class="text-green-700 text-center font-gentle">Interns got to know each other and brainstormed ideas for their garden projects.</p>
         </div>
-        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block"></span>
+        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block sm:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:left-[25%]">
         <img src="{{ '/material/timeline-images/oysters.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 2</h2>
             <p class="text-green-700 text-center font-gentle">Interns took trips to green spaces, learning soil and water science while practicing citizen science.</p>
         </div>
-        <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block"></span>
+        <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block sm:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:right-[25%]">
         <img src="{{ '/material/timeline-images/greene-gals.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 3</h2>
             <p class="text-green-700 text-center font-gentle">Interns got hands-on experience on garden visits to local community gardens where they collaborated to help them out.</p>
         </div>
-        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block"></span>
+        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block sm:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:left-[25%]">
         <img src="{{ '/material/timeline-images/birding.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 4</h2>
             <p class="text-green-700 text-center font-gentle">Interns explored their environment by learning to identify trees, diagnose plants, and taking birding walks in Fort Greene Park!</p>
         </div>
-        <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block"></span>
+        <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block sm:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%]  max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[30px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%]  max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:right-[25%]">
         <img src="{{ '/material/timeline-images/cleanup.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 5</h2>
             <p class="text-green-700 text-center font-gentle">Interns were stewards of plant life in the Greene Garden, completing tree care and soil checkups on home turf while working on their project presentations.</p>
         </div>
-        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block"></span>
+        <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block sm:opacity-100"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col md:left-[25%]">
         <img src="{{ '/material/timeline-images/team-selfie.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 6</h2>
             <p class="text-green-700 text-center font-gentle">Interns presented their hard work on their garden projects to peers, educators, and industry professionals who they met over the course of the program!</p>
         </div>
-        <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block"></span>
+        <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block sm:opacity-100"></span>
     </div>
     
-    <!-- <div id="timeline" class="absolute top-[205px] right-[50%] w-[15px] h-[92%] bg-white shadow-xl z-0"></div> -->
-
+    <div id="timeline" class="hidden md:block md:opacity-100 absolute top-[205px] right-[50%] w-[15px] h-[92%] bg-white shadow-xl z-0"></div>
 </div>
 
 <!-- Event Calendar -->
@@ -135,14 +134,14 @@ title: Home
 
     <!-- Footer -->
     <div class="flex flex-row space-evenly relative bottom-0 flex bg-gray-200 md:h-[50px] w-full mt-[10px] justify-evenly">
-            <a href="https://www.instagram.com/greenegardenbrooklyn/?hl=en" target="blank">
-                <img src="./material/insta-icon-bw.png" class="w-[30px] m-[10px]">
+            <a href="https://www.instagram.com/greenegardenbrooklyn/?hl=en" target="blank" class="md:hidden">
+                <img src="./material/insta-icon-bw.png" class="md:hidden w-[30px] m-[10px]">
             </a>
-            <a href="tel:+17189637020">
-                <img src="./material/phone-circle.png" class="w-[30px] m-[10px]">
+            <a href="tel:+17189637020" class="md:hidden">
+                <img src="./material/phone-circle.png" class="md:hidden w-[30px] m-[10px]">
             </a>
-            <a href="https://account.venmo.com/u/greenegarden" target="_blank">
-                <img src="./material/venmo-icon-bw.png" class="w-[30px] m-[10px]">
+            <a href="https://account.venmo.com/u/greenegarden" target="_blank" class="md:hidden">
+                <img src="./material/venmo-icon-bw.png" class="md:hidden w-[30px] m-[10px]">
             </a>
 
             <a target="blank" href="https://www.instagram.com/greenegardenbrooklyn/?hl=en" class="hidden md:block md:opacity-100 text-green-900 text-[1rem] md:text-[2vw] md:text-opacity-1 hover:underline font-merriweather">@greenegardenbrooklyn</a>
