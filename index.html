@@ -7,34 +7,43 @@ title: Home
 <div id="home-page" class="flex flex-col w-full h-full">
 
     <!-- Header -->
-    <header id="header" class="fixed top-0 left-0 w-full text-center bg-white z-50">
+    <header id="header" class="absolute md:fixed top-0 flex flex-col items-center left-0 h-full md:h-auto w-full text-center bg-white z-50">
         <a href="#home_bg">
-            <div class="text-[2rem] lg:text-[6rem] m-0 px-4 py-2 text-green-900 font-gentle">
-                Greene Garden Oasis</div>
+            <div class="text-[3rem] lg:text-[6rem] m-0 px-4 pt-[20px] text-green-900 font-gentle">
+                Greene Garden</div>
         </a>
 
+        <!-- Video component for mobile -->
+        <figure class="md:hidden flex flex-col pb-[30px] items-center justify-center w-full h-full">
+            <video autoplay muted class="max-w-[80vw] object-contain">
+                <source src="{{ '/material/garden-video-capcut.mp4' | relative_url }}">
+            </video>
+            <figcaption class="address text-center text-green-900 mb-[10px] font-gentle text-[clamp(1rem,2vw,3rem)] hover:underline"><a target="blank" href="https://maps.app.goo.gl/WTw7wtsypaQ1tEju7">2 South Portland
+                Ave</br>Brooklyn, NY</a></figcaption>
+        </figure>
+
         <!-- Nav Bar -->
-        <ul class="list-none flex justify-evenly pb-2 m-0 px-4">
+        <ul class="absolute bottom-0 left-0 w-full md:relative list-none flex justify-evenly pb-2 m-0 px-4">
             <li><a href="#about-page"
-                    class="text-green-900 text-sm sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">ABOUT</a>
+                    class="text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">ABOUT</a>
             </li>
             <li><a target="_blank" href="https://account.venmo.com/u/greenegarden"
-                    class="text-green-900 text-sm sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">DONATE</a>
+                    class="text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] px-[5px] md:px-0 font-gentle m-0 leading-none hover:underline">DONATE</a>
             </li>
             <li><a href="#calendar-page"
-                    class="text-green-900 text-sm sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">EVENTS</a>
+                    class="text-green-900 text-[1.5rem] sm:text-base lg:text-[clamp(2rem,2vw,6rem)] font-gentle m-0 leading-none hover:underline">EVENTS</a>
             </li>
         </ul>
     </header>
 
     <!-- Home Page Background -->
-    <div id="home_bg" class="flex flex-1 w-full bg-green-900 justify-center">
+    <div id="home_bg" class="hidden md:flex md:opacity-100 flex-1 w-full bg-green-900 justify-center">
         <!-- Kate-Ellen's video! -->
         <figure class="pt-[225px] max-w-[45vh]">
             <video autoplay muted class="object-contain shadow-xl">
                 <source src="{{ '/material/garden-video-capcut.mp4' | relative_url }}">
             </video>
-            <figcaption class="address text-center text-white font-merriweather text-[clamp(1rem,2vw,3rem)] hover:underline"><a target="blank" href="https://maps.app.goo.gl/WTw7wtsypaQ1tEju7">2 South Portland
+            <figcaption class="address text-center text-white mb-[10px] font-merriweather text-[clamp(1rem,2vw,3rem)] hover:underline"><a target="blank" href="https://maps.app.goo.gl/WTw7wtsypaQ1tEju7">2 South Portland
                 Ave</br>Brooklyn, NY</a></figcaption>
         </figure>
     </div>
@@ -54,7 +63,7 @@ title: Home
 
     <h1 class="animated text-center text-verdant font-gentle text-[6vw] mb-[50px] z-5 pt-[20px]">Summer Internship</h1>
 
-    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] sm:left-[55%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
         <img src="{{ '/material/timeline-images/team-selfie.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 1</h2>
@@ -63,7 +72,7 @@ title: Home
         <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] sm:left-[55%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
         <img src="{{ '/material/timeline-images/oysters.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 2</h2>
@@ -72,7 +81,7 @@ title: Home
         <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] sm:left-[55%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
         <img src="{{ '/material/timeline-images/greene-gals.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 3</h2>
@@ -81,7 +90,7 @@ title: Home
         <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] sm:left-[55%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
         <img src="{{ '/material/timeline-images/birding.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 4</h2>
@@ -90,7 +99,7 @@ title: Home
         <span class="absolute -left-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-r-[40px] border-r-white hidden sm:block"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] sm:left-[55%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%]  max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
         <img src="{{ '/material/timeline-images/cleanup.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 5</h2>
@@ -99,7 +108,7 @@ title: Home
         <span class="absolute -right-10 h-0 w-0 top-28px border-t-[50px] border-t-transparent border-b-[50px] border-b-transparent border-l-[40px] border-l-white hidden sm:block"></span>
     </div>
 
-    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] sm:left-[55%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
+    <div class="animated relative mx-auto mb-[50px] shadow-xl flex bg-white max-w-[90%] sm:max-w-[40%] max-h-[100vh] items-center rounded-lg px-[10px] pb-[10px] pt-[30px] flex-col">
         <img src="{{ '/material/timeline-images/team-selfie.jpg' | relative_url }}" class="h-auto max-w-[90%] object-cover">
         <div class="max-w-[80%]">
             <h2 class="text-green-800 text-[2rem] text-center font-gentle pt-[5px]">Week 6</h2>
