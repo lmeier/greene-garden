@@ -10,8 +10,8 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.4.1"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # deleted
-gem "jekyll-postcss"        # lets Jekyll run PostCSS/Tailwind
 gem "webrick", "~> 1.7"     # if Ruby 3.x
+gem "logger"                # required for Ruby 4.0+
 gem "kramdown"  # ensure markdown converter is enabled
 # If you have any plugins, put them here!
 group :jekyll_plugins do

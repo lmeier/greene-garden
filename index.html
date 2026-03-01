@@ -7,7 +7,7 @@ title: Home
 <div id="home-page" class="flex flex-col w-full h-full">
 
     <!-- Header -->
-    <header id="header" class="relative h-screen md:fixed top-0 flex flex-col items-center left-0 h-full md:h-auto w-full text-center bg-white z-50">
+    <header id="header" class="relative h-screen md:fixed top-0 flex flex-col items-center left-0 h-full md:h-auto w-full text-center bg-verdant md:bg-white z-50">
         <a href="#home_bg">
             <div class="hidden md:block md:opacity-100 text-[4rem] lg:text-[6rem] m-0 text-green-900 bg-white font-gentle">
                 Greene Garden Oasis</div>
@@ -42,11 +42,10 @@ title: Home
     </header>
 
     <!-- Home Page Background -->
-    <div id="home_bg" class="hidden md:flex md:flex-col items-center justify-center md:opacity-100 w-full bg-green-900 h-screen">
+    <div id="home_bg" class="hidden md:flex md:flex-col items-center justify-center md:opacity-100 w-full bg-green-900 h-screen md:pt-36 lg:pt-44">
         <!-- Kate-Ellen's video! -->
-        <div class="flex-1 bg-green-900 w-full"></div>
         <figure class="max-w-[45vh] pb-[30px] lg:pb-0">
-            <video autoplay muted class="object-contain shadow-xl">
+            <video autoplay muted class="w-full object-contain shadow-xl">
                 <source src="{{ '/material/garden-video-capcut.mp4' | relative_url }}">
             </video>
             <figcaption class="address text-center text-white mb-[10px] font-merriweather text-[clamp(1rem,2vw,3rem)] hover:underline"><a target="blank" href="https://maps.app.goo.gl/WTw7wtsypaQ1tEju7">2 South Portland
