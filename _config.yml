@@ -35,7 +35,6 @@ theme: null
 markdown: kramdown  # ensure markdown converter is enabled
 plugins:
   - jekyll-feed
-  - jekyll-postcss
 
 # Exclude from processing.
 # The following items will not be processed, by default.
